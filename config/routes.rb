@@ -1,12 +1,12 @@
 Rails.application.routes.draw do
 
+root 'admins#home'
 
-
-
-
-get 'admins#home'
 
 resources :admins
+
+resources :courses
+
 
 
 

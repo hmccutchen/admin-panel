@@ -1,0 +1,9 @@
+<h1>Build a Course</h1>
+
+
+
+<%= form_for(@course) do |c| %>
+<%= c.text_field :name, placeholder: 'Name of course'%>
+<%= c.number_field :total_hours, placeholder: 'Total Hours' %>
+<%= c.submit 'Add course' %>
+<% end %>
