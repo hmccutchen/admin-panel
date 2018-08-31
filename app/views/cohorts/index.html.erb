@@ -1,0 +1,10 @@
+<h1>Cohorts</h1>
+
+<h1><%= @courses.name %></h1>
+<% @courses.cohorts.each do |cc| %>
+<h3><%= cc.name %></h3>
+<p>Start Date: <%= cc.start_date %></p>
+<p>End Date: <%= cc.end_date %></p>
+<% end %>
+
+

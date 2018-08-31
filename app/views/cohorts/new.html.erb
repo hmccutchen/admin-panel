@@ -1,0 +1,10 @@
+<h1>Add a Cohort</h1>
+
+
+
+<%= form_for([@course, @cohort]) do |cc| %>
+<%= cc.text_field :name, placeholder: 'name' %><br>
+<%= cc.date_field :start_date %>
+<%= cc.date_field :end_date %><br>
+<%= cc.submit 'Add cohort' %>
+<% end %>
