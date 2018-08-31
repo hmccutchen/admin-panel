@@ -1,16 +1,12 @@
 Rails.application.routes.draw do
 
-root 'access#login'
-
-get 'access/login' => 'access#login'
-post 'access/login' => 'access#logging_in'
-
-
-resources :users
 
 
 
 
+get 'admins#home'
+
+resources :admins
 
 
 
