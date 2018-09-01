@@ -26,6 +26,7 @@ end
   def show
     @course = Course.find(params[:course_id])
     @cohort = Cohort.find(params[:id])
+    @teacher = Teacher.find(params[:id])
   end
 
   def edit

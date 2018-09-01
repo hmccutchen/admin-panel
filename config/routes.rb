@@ -9,12 +9,12 @@ resources :admins
 
 resources :cohorts do
 
-resources :teachers, only: [:index, :new, :create, :show, :edit]
+resources :teachers, only: [:index, :new, :create, :show, :edit, :update]
 end
 
 resources :courses do
-
 resources :cohorts
+
 
 
 end

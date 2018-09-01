@@ -21,6 +21,14 @@ end
 
 
   def edit
+    @cohort = Cohort.find(params[:cohort_id])
+    @teacher = Teacher.find(params[:id])
+  end
+
+  def update
+      @cohort = Cohort.find(params[:cohort_id])
+    @teacher = Teacher.find(params[:id])
+   @teacher.update(teacher_params)
   end
 
   def index

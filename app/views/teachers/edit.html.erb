@@ -1,2 +1,10 @@
 <h1>Teachers#edit</h1>
-<p>Find me in app/views/teachers/edit.html.erb</p>
+
+<%= form_for([@cohort,@teacher]) do |t| %>
+<%= t.text_field :first_name, placeholder: 'First name'%>
+<%= t.text_field :last_name, placeholder: 'Last name' %><br>
+<%= t.number_field :age, placeholder: 'age' %><br>
+<%= t.text_field :education, placeholder: 'Education' %><br>
+<%= t.number_field :salary, class: :text_field, step: :any, placeholder: 'salary' %><br>
+<%= t.submit 'edit teacher' %>
+<% end %>
