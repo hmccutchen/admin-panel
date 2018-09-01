@@ -1,10 +1,16 @@
 Rails.application.routes.draw do
 
 
+
 root 'admins#home'
 
 
 resources :admins
+
+resources :cohorts do
+
+resources :teachers, only: [:index, :new, :create, :show, :edit]
+end
 
 resources :courses do
 
