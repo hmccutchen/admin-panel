@@ -2,10 +2,13 @@ class AdminsController < ApplicationController
 
 
 
+def create
+  @admin = Admin.create(:username => "hmccutchen", :password => "hahaha")
 
+end
 
+def login
 
-def home
   username = params[:username]
   given_password = params[:password]
 
@@ -19,6 +22,13 @@ else
   render 'access/login'
 
 end
+
+end
+
+
+
+def home
+  @admin = Admin.new
 end
 
 

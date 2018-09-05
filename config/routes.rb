@@ -2,6 +2,7 @@ Rails.application.routes.draw do
 
   root 'admins#home'
 
+get '/admins/home' => '/admins/new'
 
   resources :admins
 

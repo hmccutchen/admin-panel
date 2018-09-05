@@ -1,1 +1,9 @@
-<h1>homepage</h1>
+<h1>Log In...</h1>
+
+<%= form_for(@admin) do |a| %>
+<label >Username</label><br>
+<%= a.text_field :username %><br>
+<label for="">Passwords</label><br>
+<%= a.password_field :password %><br>
+<%= a.submit "Login" %>
+<% end %>
