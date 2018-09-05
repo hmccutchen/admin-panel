@@ -3,3 +3,32 @@
   font-size: 50px;
   color: #030121;
 }
+
+.end-date{
+  margin-left: 48px;
+}
+
+.date-time{
+ padding: 5px 5px;
+
+}
+
+.container.date-time{
+  margin-left: 25px;
+}
+
+
+span.past-links{
+  font-size: 20px;
+}
+
+.little-nav{
+  margin: 0px;
+  width: 100%;
+  padding: 0px;
+}
+
+.teacher-info{
+  text-align: center;
+  margin-top: 6%;
+}

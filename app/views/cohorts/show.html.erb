@@ -1,15 +1,21 @@
-<h1>View cohort & course </h1>
-<%= link_to "Add students" ,new_cohort_student_path(@cohort) %>
 
-<h1><%= @course.name %></h1>
-<h2>The "<%= @cohort.name %>" cohort</h2>
+<%= link_to "Add students" ,new_cohort_student_path(@cohort), class: "btn btn-primary" %>
+<div class="container little-nav">
+  <div class="row">
+    <div class="col-md-4 col-sm-6 col-xs-12">
+      <span class="past-links"><%= link_to "#{@course.name}", course_path(@course) %></span> >> <span class="past-links">The<strong> "<%= @cohort.name %>"</strong> cohort</span>
+    </div>
+  </div>
+</div>
 <%# if @teacher.exist? == false %>
-  <%#= render 'new_cohort_teacher' %>
-  <%# end %>
-<p>Instructor: <%= @teacher.first_name %> <%= @teacher.last_name %></p>
-<p> Start date: <%= @cohort.start_date %></p>
- <h3>Students</h3>
- <% @student.each do |s| %>
- <p><%= s.first_name %> <%= s.last_name %></p>
+<%#= render 'new_cohort_teacher' %>
+<%# end %>
+<div class="container">
+<span>Instructor:<h2 class="teacher-info">-<%= link_to "#{@teacher.first_name.capitalize}", cohort_teacher_path(@cohort) %> <%= @teacher.last_name %>-</h2>
+<p> <%= @cohort.start_date.strftime("%y/%m/%d") %> - <%= @cohort.end_date.strftime("%y/%m/%d") %></p></span>
+</div>
+<h3>Students</h3>
+<% @student.each do |s| %>
+<p><%= s.first_name %> <%= s.last_name %></p>
 <% end %>
 
