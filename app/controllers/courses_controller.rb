@@ -7,8 +7,11 @@ class CoursesController < ApplicationController
   end
 
   def show
-    @cohort = Cohort.find(params[:id])
-    @teacher = Teacher.find(params[:id])
+    # @cohort = Cohort.find(params[:id])
+    @cohort = Cohort.joins(:course).where(:courses => {:id => params[:id]})
+    # @teacher = Teacher.find(params[:id])
+    #searches for students in the join table where course id is the id passed in url...
+    @student = Student.joins(:courses).where(:courses => {:id => params[:id]})
     # @course = Course.find(params[:id])
   end
 

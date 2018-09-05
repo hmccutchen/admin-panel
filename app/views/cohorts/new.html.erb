@@ -5,6 +5,14 @@
 <%= form_for([@course, @cohort]) do |cc| %>
 <%= cc.text_field :name, placeholder: 'name' %><br>
 <%= cc.date_field :start_date %>
-<%= cc.date_field :end_date %><br>
-<%= cc.submit 'Add cohort' %>
+<%= cc.date_field :end_date %><br><br>
+
+<%= cc.fields_for :teacher do |t|%>
+<%= t.text_field :first_name, placeholder: 'First name' %><br>
+<%= t.text_field :last_name, placeholder: 'Last name' %><br>
+<%= t.number_field :age, placeholder: 'age' %><br>
+<%= t.text_field :education, placeholder: 'Education' %><br>
+<%=t.number_field :salary, class: :text_field, step: :any, placeholder: 'salary' %><br>
+<% end %>
+<%= cc.submit 'Add cohort/teacher' %>
 <% end %>

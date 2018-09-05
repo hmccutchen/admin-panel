@@ -1,8 +1,15 @@
 <h1>View cohort & course </h1>
+<%= link_to "Add students" ,new_cohort_student_path(@cohort) %>
 
 <h1><%= @course.name %></h1>
-<p><%= @teacher.first_name %></p>
-<h2><%= @cohort.name %></h2>
+<h2>The "<%= @cohort.name %>" cohort</h2>
+<%# if @teacher.exist? == false %>
+  <%#= render 'new_cohort_teacher' %>
+  <%# end %>
+<p>Instructor: <%= @teacher.first_name %> <%= @teacher.last_name %></p>
 <p> Start date: <%= @cohort.start_date %></p>
-
+ <h3>Students</h3>
+ <% @student.each do |s| %>
+ <p><%= s.first_name %> <%= s.last_name %></p>
+<% end %>
 

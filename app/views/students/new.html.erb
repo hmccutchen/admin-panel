@@ -1,0 +1,9 @@
+<h1>Students#new</h1>
+
+<%= form_for([@cohort, @student]) do |cs| %>
+<%= cs.text_field :first_name, placeholder: "First Name" %>
+<%= cs.text_field :last_name, placeholder: "Last Name" %><br>
+<%= cs.number_field :age, placeholder: "Age" %><br>
+<%= cs.text_field :education, placeholder: "Education" %><br>
+<%= cs.submit "Create student" %>
+<% end %>
