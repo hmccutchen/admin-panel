@@ -15,7 +15,7 @@ def logging_in
   user = User.find_by(username: username)
   p user
   if user == user.authenticate(params[:password])
-  session[:user] = user.role
+  session[:user]
 
   redirect_to '/users'
 else
