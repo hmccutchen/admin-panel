@@ -1,0 +1,78 @@
+// Place all the styles related to the Courses controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+@import 'course-show';
+body{
+  background-color: #6a5a99;
+}
+.course{
+  border: 2px inset #ededed;
+margin-top: 10%;
+padding: 20px;
+max-height: 136.967px;
+min-height: 136.967px;
+
+
+  h3{
+    text-align: center;
+  }
+}
+
+.course a{
+  color: black;
+}
+
+.course a:hover{
+  color: #464a4f;
+  text-decoration: none
+}
+
+  .course:hover{
+   box-shadow: 0px 0px 3px 0px grey;
+
+  }
+
+.course-hours{
+  text-align: center;
+font-size: 20px;
+}
+
+a.btn.btn-primary{
+  width: 100%;
+  // background-color: #023b82;
+  background-color: transparent;
+  border-color:#023b82;
+  border-radius: 3px;
+      font-size: 17px;
+      transition: background-color .5s;
+      color: black;
+
+}
+
+a.btn.btn-primary:hover{
+  box-shadow: 1px 1px 3px gray;
+  background-color: #023b82;
+  color: white;
+
+}
+
+a.btn.btn-success{
+  background-color: #036b9b;
+  width: 100%;
+  font-size: 20px;
+  border-color: #036b9b;
+  border-radius: 2px;
+  transition: background-color .5s;
+}
+
+a.btn.btn-success:hover{
+box-shadow: 1px 1px 3px gray;
+background-color: #004f8c;
+  border-color:#035277;
+}
+
+.close p{
+  font-size: 30px;
+  color: black;
+}
