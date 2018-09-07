@@ -40,15 +40,21 @@ font-size: 20px;
 
 a.btn.btn-primary{
   width: 100%;
-  background-color: #023b82;
+  // background-color: #023b82;
+  background-color: transparent;
   border-color:#023b82;
   border-radius: 3px;
       font-size: 17px;
+      transition: background-color .5s;
+      color: black;
 
 }
 
 a.btn.btn-primary:hover{
   box-shadow: 1px 1px 3px gray;
+  background-color: #023b82;
+  color: white;
+
 }
 
 a.btn.btn-success{
@@ -57,10 +63,13 @@ a.btn.btn-success{
   font-size: 20px;
   border-color: #036b9b;
   border-radius: 2px;
+  transition: background-color .5s;
 }
 
 a.btn.btn-success:hover{
 box-shadow: 1px 1px 3px gray;
+background-color: #004f8c;
+  border-color:#035277;
 }
 
 .close p{

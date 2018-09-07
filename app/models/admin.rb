@@ -5,4 +5,6 @@ class Admin < ApplicationRecord
     length: { minimum: 8, allow_blank: false }
 
 
+
+
 end

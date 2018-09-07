@@ -4,9 +4,11 @@
 
 
 
+<%# if session[:admin_id]  %>
 
+<!-- <h1> show this </h1> -->
 
-
+<%# else %>
 
   <% @courses.each do |c| %>
 <div class="container">
@@ -21,4 +23,5 @@
     <% end %>
   </div>
 </div>
+
 
