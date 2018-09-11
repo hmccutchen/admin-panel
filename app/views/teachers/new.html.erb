@@ -3,10 +3,10 @@
 <%= form_for([@cohort,@teacher]) do |t| %>
 <%= t.text_field :first_name, placeholder: 'First name'%>
 <%= t.text_field :last_name, placeholder: 'Last name' %><br>
-<%= t.number_field :age, placeholder: 'age' %><br>
+<%= t.number_field :age, max: 150, placeholder: 'age' %><br>
 <%= t.text_field :education, placeholder: 'Education' %><br>
 <%= t.text_field :username, placeholder: "Username" %><br>
 <%= t.password_field :password, placeholder: 'Password' %><br>
-<%= t.number_field :salary, class: :text_field, step: :any, placeholder: 'salary' %><br>
+<%= t.number_field :salary, min: 1, class: :text_field, step: :any, placeholder: 'salary' %><br>
 <%= t.submit 'Add teacher' %>
 <% end %>

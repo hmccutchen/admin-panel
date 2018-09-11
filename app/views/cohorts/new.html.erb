@@ -3,18 +3,20 @@
 
 
 <%= form_for([@course, @cohort]) do |cc| %>
+<label for="">Cohort</label><br>
 <%= cc.text_field :name, placeholder: 'name' %><br>
 <%= cc.date_field :start_date %>
 <%= cc.date_field :end_date %><br><br>
 
+<label for=""> Teacher</label><br>
 <%= cc.fields_for :teacher do |t|%>
 <%= t.text_field :first_name, placeholder: 'First name' %><br>
 <%= t.text_field :last_name, placeholder: 'Last name' %><br>
-<%= t.number_field :age, placeholder: 'age' %><br>
+<%= t.number_field :age, max: 150, placeholder: 'age' %><br>
 <%= t.text_field :education, placeholder: 'Education' %><br>
 <%= t.text_field :username, placeholder: "Username" %><br>
 <%= t.password_field :password, placeholder: 'Password' %><br>
-<%=t.number_field :salary, class: :text_field, step: :any, placeholder: 'salary' %><br>
+<%=t.number_field :salary, min: 1, class: :text_field, step: :any, placeholder: 'salary' %><br>
 <% end %>
 <%= cc.submit 'Add cohort/teacher' %>
 <% end %>

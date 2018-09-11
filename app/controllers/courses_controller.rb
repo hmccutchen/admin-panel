@@ -40,6 +40,13 @@ class CoursesController < ApplicationController
 
 
 
+def results
+  @results = (params[:q]).capitalize
+  @course = Course.where(name: @results)
+  p @course
+end
+
+
 
 
 private

@@ -36,6 +36,17 @@ end
     end
   end
 
+
+
+def results
+  @results = (params[:q]).downcase
+  @student = Student.where(first_name: @results)
+  p @student
+end
+
+
+
+
 private
 
 def student_params

@@ -13,6 +13,10 @@
 <span>Instructor:<h2 class="teacher-info">-<%= link_to "#{@teacher.first_name.capitalize}", cohort_teacher_path(@cohort) %> <%= @teacher.last_name %>-</h2>
 <p class="cohort-time"> <%= @cohort.start_date.strftime("%y/%m/%d") %> - <%= @cohort.end_date.strftime("%y/%m/%d") %></p></span>
 </div>
+
+<!-- <div class="container">
+          <%#= image_tag "pencil_noir.png", class: "black-pencil" %>
+</div> -->
 <div class="container">
 <h3>Students</h3>
 <% @student.each do |s| %>

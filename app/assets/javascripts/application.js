@@ -10,10 +10,33 @@
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
 //
-//= require jquery
-//= require jquery_ujs
-//= require jquery-ui
 //= require rails-ujs
 //= require activestorage
 //= require turbolinks
 //= require_tree .
+
+
+// document.addEventListener("DOMContentLoaded",function(){
+
+
+// function randomColor(){
+
+//   var a = Math.floor(Math.random() * 256);
+//   var b = Math.floor(Math.random() * 256);
+//   var c = Math.floor(Math.random() * 256);
+//   var r = `rgb(${a},${b},${c})`;
+
+// course = document.getElementsByClassName("course");
+
+// for(var i = 0; i < course.length; i++){
+
+// course[i].style.backgroundColor = r;
+
+// }
+
+// }
+
+// randomColor();
+
+// })
+

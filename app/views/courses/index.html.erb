@@ -1,16 +1,13 @@
+<%= link_to "Add a course", new_course_path, class: "btn btn-success" %>
 
-     <%= link_to "Add a course", new_course_path, class: "btn btn-success" %>
+<% if session[:admin_id] || session[:teacher_id]  %>
+ <%= link_to "Log out", logout_path, method: :delete %>
+<% end %>
 
 
 
 
-<%# if session[:admin_id]  %>
-
-<!-- <h1> show this </h1> -->
-
-<%# else %>
-
-  <% @courses.each do |c| %>
+<% @courses.each do |c| %>
 <div class="container">
   <div class="row">
     <div class="col-md-3 col-sm-4 col-xs-12">

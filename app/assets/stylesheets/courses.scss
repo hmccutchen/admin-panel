@@ -12,7 +12,9 @@ margin-top: 10%;
 padding: 20px;
 max-height: 136.967px;
 min-height: 136.967px;
-
+ // background-color: #fcfcfc;
+ opacity: 1;
+ transition: background-color .5s;
 
   h3{
     text-align: center;
@@ -29,7 +31,8 @@ min-height: 136.967px;
 }
 
   .course:hover{
-   box-shadow: 0px 0px 3px 0px grey;
+   box-shadow: 0px 0px 5px 0px grey;
+   background-color: #fcfcfc;
 
   }
 
@@ -45,7 +48,7 @@ a.btn.btn-primary{
   border-color:#023b82;
   border-radius: 3px;
       font-size: 17px;
-      transition: background-color .5s;
+      transition: background-color .3s;
       color: black;
 
 }
@@ -59,7 +62,7 @@ a.btn.btn-primary:hover{
 
 a.btn.btn-success{
   background-color: #036b9b;
-  width: 100%;
+  width: 50%;
   font-size: 20px;
   border-color: #036b9b;
   border-radius: 2px;
@@ -76,3 +79,13 @@ background-color: #004f8c;
   font-size: 30px;
   color: black;
 }
+
+
+
+
+
+
+
+
+
+
