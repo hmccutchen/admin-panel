@@ -44,6 +44,7 @@ def create
 
   if @admin && @admin.authenticate(params[:admin][:password])
     session[:admin_id] = @admin.id
+
     redirect_to courses_path
   elsif @teacher && @teacher.authenticate(params[:admin][:password])
     p "it read the line above"
@@ -57,13 +58,6 @@ def create
 end
 
 
-def current_user
-  p "this is  the current user method happening"
-  @current_user ||= Admin.find_by(id: session[:admin_id]) if session[:admin_id]
-  @current_user ||= Teacher.find_by(id: session[:teacher_id]) if session[:teacher_id]
-
-
-end
 
 def logged_in?
   !current_user.nil?

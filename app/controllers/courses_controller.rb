@@ -1,4 +1,5 @@
 class CoursesController < ApplicationController
+before_action :require_user, only: [:index, :show]
 
  before_action :find_course, only: [:show, :edit, :update]
 

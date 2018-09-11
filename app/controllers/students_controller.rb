@@ -10,6 +10,8 @@ def index
   @students = Student.all
 end
   def show
+    # @cohort = Cohort.find(params[:cohort_id])
+    @student = Student.where(cohort_id: params[:id])
   end
 
   def edit

@@ -4,7 +4,7 @@
 <h1>Results</h1>
 
 <% @student.each do |s| %>
-<%= s.first_name %>
-<%= s.last_name %>
-<%= s.age %><br>
+<span><%= link_to "#{s.first_name}", s %></span>
+<span><%= s.last_name %></span>
+<span><%= s.age %></span><br>
 <% end %>

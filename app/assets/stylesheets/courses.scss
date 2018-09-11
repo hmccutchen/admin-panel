@@ -23,16 +23,20 @@ min-height: 136.967px;
 
 .course a{
   color: black;
+
+
 }
 
 .course a:hover{
-  color: #464a4f;
+  // color: #464a4f;
+color: #fefefe;
   text-decoration: none
 }
 
   .course:hover{
    box-shadow: 0px 0px 5px 0px grey;
-   background-color: #fcfcfc;
+   // background-color: #fcfcfc;
+   color: #fefefe;
 
   }
 
@@ -81,7 +85,17 @@ background-color: #004f8c;
 }
 
 
+.btn.btn-danger.logout{
+  // background-color:#8c0505;
+  border-color: #ad0505;
+  background-color: #ad0505;
+  font-size: 20px;
+  width: 100%;
+}
 
+.btn.btn-danger.logout:hover{
+  background-color: #8c0505;
+}
 
 
 

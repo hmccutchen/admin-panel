@@ -1,7 +1,14 @@
+  <% if session[:admin_id] %>
 <%= link_to "Add a course", new_course_path, class: "btn btn-success" %>
+<% else %>
+
+
+
+
+<% end %>
 
 <% if session[:admin_id] || session[:teacher_id]  %>
- <%= link_to "Log out", logout_path, method: :delete %>
+ <%= link_to "Log out", logout_path, method: :delete, class: 'btn btn-danger logout' %>
 <% end %>
 
 
@@ -11,8 +18,8 @@
 <div class="container">
   <div class="row">
     <div class="col-md-3 col-sm-4 col-xs-12">
-        <div class="course">
-        <h3><%=link_to "#{c.name.capitalize}", c %></h3>
+        <div  class="course">
+        <h3 id="card-name"><%=link_to "#{c.name.capitalize}", c %></h3>
         <p class="course-hours"><%= c.total_hours %>hrs</p>
       </div>
       <%= link_to 'Edit this course', edit_course_path(c), class: 'btn btn-primary' %>

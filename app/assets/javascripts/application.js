@@ -16,27 +16,36 @@
 //= require_tree .
 
 
-// document.addEventListener("DOMContentLoaded",function(){
+document.addEventListener("DOMContentLoaded",function(){
+
+course = document.getElementsByClassName("course");
+
+for(var y = 0; y < course.length; y++){
+  course[y].addEventListener("mouseenter", function(){
 
 
-// function randomColor(){
+   this.style.backgroundColor = randomColor();
 
-//   var a = Math.floor(Math.random() * 256);
-//   var b = Math.floor(Math.random() * 256);
-//   var c = Math.floor(Math.random() * 256);
-//   var r = `rgb(${a},${b},${c})`;
 
-// course = document.getElementsByClassName("course");
+})
+  course[y].addEventListener("mouseleave", function(){
 
-// for(var i = 0; i < course.length; i++){
 
-// course[i].style.backgroundColor = r;
+    this.style.backgroundColor = '#eceaf2';
+  })
+}
 
-// }
 
-// }
 
-// randomColor();
+function randomColor(){
 
-// })
+  var a = Math.floor(Math.random() * 256);
+  var b = Math.floor(Math.random() * 256);
+  var c = Math.floor(Math.random() * 256);
+   r = `rgb(${a},${b},${c})`;
+
+   return r;
+}
+})
+
 
