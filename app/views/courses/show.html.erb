@@ -1,5 +1,6 @@
+  <% if session[:admin_id] %>
  <%= link_to "Add cohort / Teacher", new_course_cohort_path(@course), class: "btn btn-primary" %>
-
+<% end %>
 
  <h1 class="course-title"><%= @course.name %></h1>
 <span class="past-links"> << <%= link_to "Courses", courses_path %></span>

@@ -1,6 +1,6 @@
-
+ <% if session[:admin_id] %>
 <%= link_to "Add students" ,new_cohort_student_path(@cohort), class: "btn btn-primary"%>
-
+<% end %>
 <div class="little-nav">
   <div class="row">
     <div class="col-md-4 col-sm-6 col-xs-12">

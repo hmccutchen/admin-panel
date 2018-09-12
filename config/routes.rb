@@ -7,6 +7,10 @@ Rails.application.routes.draw do
 get '/login' => 'admins#new'
   post '/' => 'admins/#create'
  delete '/logout' => 'admins#destroy'
+
+resources :courses do
+  delete '/delete' => 'courses#destroy'
+end
   resources :admins
 
   resources :students

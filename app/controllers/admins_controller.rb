@@ -2,28 +2,6 @@ class AdminsController < ApplicationController
 
 
 
-
-
-
-
-# def login
-
-#   username = params[:username]
-#   given_password = params[:password]
-
-
-#   admin = Admin.find_by(username: username)
-
-#   if admin == given_password
-#   session[:user] = admin
-
-#   redirect_to courses_path
-# else
-#   render 'admins/home'
-
-# end
-
-# end
 def home
 end
 
@@ -50,6 +28,7 @@ def create
     p "it read the line above"
     session[:teacher_id] = @teacher
     redirect_to courses_path
+
 
   else
     p "rejected"

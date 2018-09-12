@@ -7,13 +7,17 @@ body{
   background-color: #6a5a99;
 }
 .course{
-  border: 2px inset #ededed;
+  // border: 2px  #ededed;
+  border-radius: 5px;
 margin-top: 10%;
-padding: 20px;
+padding: 1px;
 max-height: 136.967px;
 min-height: 136.967px;
  // background-color: #fcfcfc;
  opacity: 1;
+ filter: blur(.2px);
+
+ transition: filter 1.5s;
  transition: background-color .5s;
 
   h3{
@@ -37,7 +41,13 @@ color: #fefefe;
    box-shadow: 0px 0px 5px 0px grey;
    // background-color: #fcfcfc;
    color: #fefefe;
+   opacity: .8;
 
+   filter: blur(0px);
+   #cross{
+    opacity: 1;
+
+   }
   }
 
 .course-hours{
@@ -66,7 +76,7 @@ a.btn.btn-primary:hover{
 
 a.btn.btn-success{
   background-color: #036b9b;
-  width: 50%;
+  width: 100%;
   font-size: 20px;
   border-color: #036b9b;
   border-radius: 2px;
@@ -98,8 +108,12 @@ background-color: #004f8c;
 }
 
 
+.delete {
+  position: relative;
+left: 250px;
+top: -2px;
+}
 
-
-
-
-
+#cross{
+ opacity: 0;
+}

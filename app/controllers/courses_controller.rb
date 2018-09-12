@@ -47,7 +47,16 @@ def results
   p @course
 end
 
+def destroy
+  @course = Course.find(params[:course_id])
+   @course.destroy
 
+      respond_to do |format|
+      format.html { p 'html response'; redirect_to @courses}
+      format.js
+end
+
+end
 
 
 private

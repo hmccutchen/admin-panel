@@ -9,7 +9,7 @@
 //
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
-//
+//= require jquery
 //= require rails-ujs
 //= require activestorage
 //= require turbolinks
@@ -46,6 +46,14 @@ function randomColor(){
 
    return r;
 }
+
+//  del = document.getElementById("cross");
+//  edit = document.getElementById("edit-tag");
+
+// del.addEventListener("click", function(){
+//   edit.classList.add('remove');
+// })
 })
+
 
 

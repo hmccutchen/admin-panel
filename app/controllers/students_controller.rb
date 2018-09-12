@@ -11,7 +11,7 @@ def index
 end
   def show
     # @cohort = Cohort.find(params[:cohort_id])
-    @student = Student.where(cohort_id: params[:id])
+    @student = Student.find(params[:id])
   end
 
   def edit

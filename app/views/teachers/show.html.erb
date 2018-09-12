@@ -1,6 +1,6 @@
 <h1>Teachers#show</h1>
 
-
+<%= link_to "cohort", course_cohort_path( @cohort) %>
 <h2><%= @teacher.first_name %> <%= @teacher.last_name %></h2>
 
  <h3> Education: <%= @teacher.education %></h3>
