@@ -1,0 +1,80 @@
+// Place all the styles related to the Admins controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.login{
+  text-align: center;
+ margin-top: 10%;
+max-width: 25%;
+font-size: 1.2em
+}
+
+.deeper{
+
+  border: 1px solid #353d74;
+  border-radius: 50%;
+  width: 61px;
+margin-left: 40%;
+  padding: 2px;
+
+}
+
+.icon{
+ background-color: white;
+padding: 10px;
+border-radius: 50%;
+width: 55px;
+border-color: blue;
+border: 2px solid #191975;
+text-align: center;
+top: 142%;
+}
+
+input#admin_username{
+  width:100%;
+  border-radius: 12px;
+
+}
+input#admin_password{
+  width: 100%;
+  border-radius: 12px;
+}
+
+.login-submit{
+  margin-top: 10px;
+  padding: 10px;
+  width: 100%;
+ box-shadow: 1px 1px 2px gray;
+}
+
+input.btn.btn-success.login-submit{
+  padding: 7px;
+  font-size: 17px;
+
+}
+
+.navbar ul{
+  display: flex;
+  list-style: none;
+  justify-content: flex-end;
+
+}
+
+.navbar li{
+  margin-left: 20px;
+
+}
+
+.navbar{
+  font-size: 18px;
+  background-color: white;
+  width: 100%;
+  padding: 10px;
+  position: sticky;
+  box-shadow: 1px 1px 2px gray;
+  top: 0px;
+  a{
+    color: black;
+  }
+}
+

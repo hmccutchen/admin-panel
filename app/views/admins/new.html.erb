@@ -1,0 +1,29 @@
+<%= render 'navbar' %>
+
+
+
+
+<div class="container login">
+  <div class="row">
+    <div class="col-md-12 col-sm-12">
+      <div class="deeper">
+        <%= image_tag 'pencil.png', class: "icon" %>
+      </div>
+      <h1>Log In</h1>
+
+      <%= form_for(:admin, url: admins_path) do |f| %>
+      <label >Username</label><br>
+      <%= f.text_field :username, placeholder: "Username" %><br>
+
+      <label>Password</label><br>
+      <%= f.password_field :password, placeholder: "Password" %><br>
+
+      <!-- <label for="">Pssword confirmation</label><br> -->
+      <%#= f.password_field :password_confirmation, placeholder: "confirm password"%><!-- <br> -->
+
+      <%= f.submit 'log in', class: "btn btn-success login-submit" %>
+      <% end %>
+    </div>
+  </div>
+</div>
+

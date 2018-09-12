@@ -1,0 +1,28 @@
+  <% if session[:admin_id] %>
+ <%= link_to "Add cohort / Teacher", new_course_cohort_path(@course), class: "btn btn-primary" %>
+<% end %>
+
+ <h1 class="course-title"><%= @course.name %></h1>
+<span class="past-links"> << <%= link_to "Courses", courses_path %></span>
+ <!--   <p><%#= @course.total_hours %>hrs</p> -->
+ <!-- <h2><%#= @cohort.name %></h2> -->
+      <% @cohort.each do |c| %>
+ <div class="container">
+  <div class="row">
+    <div class="col-md-4 col-sm-6 col-xs-12">
+
+      <div class="course">
+      <h3><%= link_to "#{c.name}", course_cohort_path(@course, c) %></h3>
+      <div class="container date-time">
+      <span>Start: <%= c.start_date.strftime("%y/%m/%d") %></span>
+           <span class="end-date"> End: <%= c.end_date.strftime("%y/%m/%d") %> </span>
+         </div>
+    </div>
+    </div>
+  <% end %>
+  </div>
+    <hr>
+</div>
+
+
+

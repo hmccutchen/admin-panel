@@ -1,0 +1,25 @@
+// Place all the styles related to the Cohorts controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+.cohort-time{
+  text-align: center;
+
+}
+
+
+.black-pencil{
+  position: fixed;
+ opacity: .1;
+  z-index: 0;
+  right: 42%;
+}
+
+.pencil{
+   position: fixed;
+ opacity: .1;
+  z-index: 0;
+  right: 42%;
+  top: 30%;
+}

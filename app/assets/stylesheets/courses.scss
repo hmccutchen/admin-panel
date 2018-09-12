@@ -1,0 +1,119 @@
+// Place all the styles related to the Courses controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+@import 'course-show';
+body{
+  background-color: #6a5a99;
+}
+.course{
+  // border: 2px  #ededed;
+  border-radius: 5px;
+margin-top: 10%;
+padding: 1px;
+max-height: 136.967px;
+min-height: 136.967px;
+ // background-color: #fcfcfc;
+ opacity: 1;
+ filter: blur(.2px);
+
+ transition: filter 1.5s;
+ transition: background-color .5s;
+
+  h3{
+    text-align: center;
+  }
+}
+
+.course a{
+  color: black;
+
+
+}
+
+.course a:hover{
+  // color: #464a4f;
+color: #fefefe;
+  text-decoration: none
+}
+
+  .course:hover{
+   box-shadow: 0px 0px 5px 0px grey;
+   // background-color: #fcfcfc;
+   color: #fefefe;
+   opacity: .8;
+
+   filter: blur(0px);
+   #cross{
+    opacity: 1;
+
+   }
+  }
+
+.course-hours{
+  text-align: center;
+font-size: 20px;
+}
+
+a.btn.btn-primary{
+  width: 100%;
+  // background-color: #023b82;
+  background-color: transparent;
+  border-color:#023b82;
+  border-radius: 3px;
+      font-size: 17px;
+      transition: background-color .3s;
+      color: black;
+
+}
+
+a.btn.btn-primary:hover{
+  box-shadow: 1px 1px 3px gray;
+  background-color: #023b82;
+  color: white;
+
+}
+
+a.btn.btn-success{
+  background-color: #036b9b;
+  width: 100%;
+  font-size: 20px;
+  border-color: #036b9b;
+  border-radius: 2px;
+  transition: background-color .5s;
+}
+
+a.btn.btn-success:hover{
+box-shadow: 1px 1px 3px gray;
+background-color: #004f8c;
+  border-color:#035277;
+}
+
+.close p{
+  font-size: 30px;
+  color: black;
+}
+
+
+.btn.btn-danger.logout{
+  // background-color:#8c0505;
+  border-color: #ad0505;
+  background-color: #ad0505;
+  font-size: 20px;
+  width: 100%;
+}
+
+.btn.btn-danger.logout:hover{
+  background-color: #8c0505;
+}
+
+
+.delete {
+  position: relative;
+left: 250px;
+top: -2px;
+}
+
+#cross{
+ opacity: 0;
+}
