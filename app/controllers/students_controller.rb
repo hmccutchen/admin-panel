@@ -10,6 +10,8 @@ def index
   @students = Student.all
 end
   def show
+    # @cohort = Cohort.find(params[:cohort_id])
+    @student = Student.find(params[:id])
   end
 
   def edit
@@ -35,6 +37,17 @@ end
       render 'new'
     end
   end
+
+
+
+def results
+  @results = (params[:q]).downcase
+  @student = Student.where(first_name: @results)
+  p @student
+end
+
+
+
 
 private
 

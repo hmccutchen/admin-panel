@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html>
   <head>
+
+<meta charset="UTF-8">
+
     <title>AdminPanel</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
@@ -12,6 +15,9 @@
   </head>
 
   <body class="body">
+<div class="container">
+          <%= image_tag "pencil_noir.png", class: "pencil" %>
+</div>
     <%= yield %>
   </body>
 </html>

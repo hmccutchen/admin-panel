@@ -1,0 +1,10 @@
+
+
+
+<h1>Results</h1>
+
+<% @student.each do |s| %>
+<span><%= link_to "#{s.first_name}", s %></span>
+<span><%= s.last_name %></span>
+<span><%= s.age %></span><br>
+<% end %>

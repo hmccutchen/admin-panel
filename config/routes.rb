@@ -1,14 +1,24 @@
 Rails.application.routes.draw do
 
-  root 'admins#new'
+  root 'admins#home'
 
 
-  resources :admins
-  get "/home" => 'admins#home'
-get '/' => 'admins#new'
+  get '/' => 'admins#home'
+get '/login' => 'admins#new'
   post '/' => 'admins/#create'
+ delete '/logout' => 'admins#destroy'
 
+resources :courses do
+  delete '/delete' => 'courses#destroy'
+end
+  resources :admins
 
+  resources :students
+  post '/results' => 'students#results'
+
+resources :courses
+
+# post '/results' => 'courses#results'
 
   resources :cohorts do
    resources :teachers, only: [:index, :new, :create, :show, :edit, :update]
